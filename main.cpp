@@ -143,8 +143,7 @@ void dessiner( )
 	if (displayMode==ORIGINAL)
 	{
 		image.draw();
-		cout << "dispModeorig" << endl;
-		//drawPoints(selectedPixels);
+		drawPoints(selectedPixels);
 	}
 	else
 	{
@@ -190,7 +189,8 @@ void mouse(int button, int state, int x, int y) {
     
 	//utilisateur a cliqué sur pixel (i,j) dans l'image
 	cout<<"PIXEL SELECTED:"<< i<<" "<<j << endl;
-	//selectedPixels.push_back(PixelPos(i,j));
+	selectedPixels.push_back(PixelPos(i,j));
+//	drawPoints(selectedPixels);
     glutPostRedisplay();
 }
 
