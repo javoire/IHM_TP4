@@ -58,9 +58,17 @@ void computeResult(Mode mode)
 	{
 		//a corriger!
 		cout<<"Inverting..."<<endl;
+		Pixel pixelWhite = Pixel(1,1,1);
+		Pixel pixelBlack = Pixel(0,0,0);
+	
 		for (int i=0;i<image.nbPixels();++i) {
-			if (true) {
+			
+			Pixel pixel = imageResult[i];
+	
+			if (pixel.r == pixelBlack.r) {
 				imageResult[i]=Pixel(1,1,1);
+			} else if (pixel.r == pixelWhite.r) {
+				imageResult[i]=Pixel(0,0,0);
 			}
 		}
 	}
