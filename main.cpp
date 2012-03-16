@@ -24,8 +24,15 @@ Image imageResult;
 
 vector<PixelPos> selectedPixels; 
 //const char * filename="data/TelecomLogo.ppm";
-//const char * filename="data/TelecomLogo.ppm";
-const char * filename="data/MJBlackAndWhite.ppm";
+const char * filename="data/TelecomLogo.ppm";
+//const char * filename="data/MJBlackAndWhite.ppm";
+
+		cout << "dispModeorig" << endl;
+void kmeans(Pixel pixel) {
+	// 	create clustercentre, mouse click
+	// 	assign pixels to this cluster
+	// 	move centerpoint to average center of all pixels assigned to this cluster
+}
 
 enum Mode { INVERT=0, FILTERING=1, SEGMENTATION=2, YOUR_OWN=3};
 const char * modeToString(Mode d)
@@ -80,7 +87,10 @@ void computeResult(Mode mode)
 	else if (mode==SEGMENTATION)
 	{
 		//segmentation...
-		cout<<"Segmentation..."<<endl;
+		cout<<"Segmentation by K-Means..."<<endl;
+
+		// for i ...
+		// kmeans(pixel)
 	}
 }
 
