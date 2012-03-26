@@ -27,7 +27,7 @@ vector<PixelPos> selectedPixels;
 const char * filename="data/TelecomLogo.ppm";
 //const char * filename="data/MJBlackAndWhite.ppm";
 
-		cout << "dispModeorig" << endl;
+		//cout << "dispModeorig" << endl;
 void kmeans(Pixel pixel) {
 	// 	create clustercentre, mouse click
 	// 	assign pixels to this cluster
